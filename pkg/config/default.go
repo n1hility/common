@@ -227,8 +227,9 @@ func defaultMachineConfig() MachineConfig {
 	return MachineConfig{
 		CPUs:     1,
 		DiskSize: 100,
-		Image:    "testing",
 		Memory:   2048,
+		Image:    getDefaultMachineImage(),
+		User:     getDefaultMachineUser(),
 	}
 }
 
